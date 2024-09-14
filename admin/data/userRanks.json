@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1", "rank" : "Police General (PGEN)"
+    },
+    {
+        "id": "2", "rank" : "Police Executive (PEMS)"
+    },
+    {
+        "id": "3", "rank" : "Police Chief Master Sergeant (PCMS)"
+    },
+    {
+        "id": "4", "rank" : "Police Senior Master Sergeant (PSMS)"
+    },
+    {
+        "id": "5", "rank" : "Police Master Sergeant (PMSg)"
+    },
+    {
+        "id": "6", "rank" : "Police Staff Sergeant (PSSg)"
+    },
+    {
+        "id": "7", "rank" : "Police Corporal (PCpl)"
+    },
+    {
+        "id": "8", "rank" : "Patrolman / Patrolwoman (Pat)"
+    }
+]
