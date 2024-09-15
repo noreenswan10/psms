@@ -2,10 +2,10 @@
 define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT']);
 
 // Path to the JSON file
-$dataUserList = ROOT_PATH . "/bppo/admin/data/userList.json";
-$dataUserRanks = ROOT_PATH . "/bppo/admin/data/userRanks.json";
-$dataUserPositions = ROOT_PATH . "/bppo/admin/data/userPosition.json";
-$dataUnitAssigned = ROOT_PATH . "/bppo/admin/data/unitAssigned.json";
+$dataUserList = ROOT_PATH . "/psms/admin/data/userList.json";
+$dataUserRanks = ROOT_PATH . "/psms/admin/data/userRanks.json";
+$dataUserPositions = ROOT_PATH . "/psms/admin/data/userPosition.json";
+$dataUnitAssigned = ROOT_PATH . "/psms/admin/data/unitAssigned.json";
 
 // Read JSON file
 $jsonUserData = file_get_contents($dataUserList);
@@ -21,13 +21,13 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include ROOT_PATH . "/bppo/admin/includes/header.php"; ?>
-<?php include ROOT_PATH . "/bppo/admin/helper/dateHelper.php"; ?>
+<?php include ROOT_PATH . "/psms/admin/includes/header.php"; ?>
+<?php include ROOT_PATH . "/psms/admin/helper/dateHelper.php"; ?>
 
 <body>
   <div class="containerMod">
-    <?php include ROOT_PATH . "/bppo/admin/includes/navbarLinks.php"; ?>
-    <?php include ROOT_PATH . "/bppo/admin/includes/toasts/toastSuccess.php"; ?>
+    <?php include ROOT_PATH . "/psms/admin/includes/navbarLinks.php"; ?>
+    <?php include ROOT_PATH . "/psms/admin/includes/toasts/toastSuccess.php"; ?>
     <section class="mainMod">
       <button id="toggle-button">
         <i class="fas fa-bars"></i>
@@ -94,10 +94,10 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
   </div>
 
   <!-- Create User Modal -->
-  <?php include ROOT_PATH . "/bppo/admin/components/modals/createUserModal.php"; ?>                 
+  <?php include ROOT_PATH . "/psms/admin/components/modals/createUserModal.php"; ?>                 
 
   <!-- Manage User Modal -->
-  <?php include ROOT_PATH . "/bppo/admin/components/modals/manageUserModal.php"; ?>   
+  <?php include ROOT_PATH . "/psms/admin/components/modals/manageUserModal.php"; ?>   
 
 
 
@@ -195,7 +195,7 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
 
 
    <script>
-     <?php include ROOT_PATH . "/bppo/admin/js/createUserToast.js"; ?>   
+     <?php include ROOT_PATH . "/psms/admin/js/createUserToast.js"; ?>   
   </script>
 
 </body>

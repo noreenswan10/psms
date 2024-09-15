@@ -61,6 +61,7 @@
             /* vertical-align: top; */
             /* or any other alignment */
         }
+
         tbody td:first-child,
         tbody th:first-child {
             text-align: left;
@@ -69,7 +70,10 @@
             /* or any other alignment */
         }
 
-
+        .number-input {
+            border: none;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -115,35 +119,43 @@
                                     <tbody>
                                         <tr>
                                             <td>a. Quality of Work</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">7.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>b. Timeliness of Work</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>c. Acceptability of output base on standard</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>d. Accomplishment of target</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -513,9 +525,54 @@
         });
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('.number-input');
+
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    // Enforce integer range 1 to 5
+                    let value = parseInt(this.value, 10);
+                    if (isNaN(value) || value < 1 || value > 5) {
+                        this.value = ''; // Clear the input if invalid
+                    } else {
+                        this.value = value; // Ensure the value is an integer
+                    }
+                });
+
+                input.addEventListener('keydown', function(e) {
+                    // Prevent special characters and non-numeric input
+                    const allowedKeys = ['Backspace', 'ArrowLeft', 'ArrowRight', 'Tab', 'Enter'];
+                    if (!allowedKeys.includes(e.key) && (e.key < '0' || e.key > '9')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
 
     <script>
-                function showPreview() {
+        // Function to handle dynamic calculations for all rows
+        document.querySelectorAll('.multiplier-input').forEach(function(input) {
+            input.addEventListener('input', function() {
+                const row = this.closest('tr'); // Find the closest table row
+                const multiplier = parseFloat(row.querySelector('.multiplier').textContent); // Get the multiplier value
+                const inputValue = parseFloat(this.value); // Get the input value
+                const resultCell = row.querySelector('.result'); // Get the result cell
+
+                // Check if input is valid and within the range 1-5
+                if (!isNaN(inputValue) && inputValue >= 1 && inputValue <= 5) {
+                    resultCell.textContent = (multiplier * inputValue); // Update result dynamically
+                } else {
+                    resultCell.textContent = '0'; // Reset if input is invalid or out of range
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        function showPreview() {
             var previewContent = document.getElementById('previewContent');
             previewContent.innerHTML = `
                 <h3>Step 1: Dimensions</h3>

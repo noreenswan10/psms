@@ -3,10 +3,10 @@ define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include ROOT_PATH . "/bppo/admin/includes/header.php"; ?>
+<?php include ROOT_PATH . "/psms/admin/includes/header.php"; ?>
 <body>
   <div class="containerMod">
-  <?php include ROOT_PATH . "/bppo/admin/includes/navbarLinks.php"; ?>
+  <?php include ROOT_PATH . "/psms/admin/includes/navbarLinks.php"; ?>
 
     <section class="mainMod">
 	 <button id="toggle-button">

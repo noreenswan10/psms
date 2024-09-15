@@ -1,6 +1,6 @@
 <?php
 $toastMessage = "User has been successfully created!";
-include ROOT_PATH . "/bppo/admin/includes/toasts/toastSuccess.php";
+include ROOT_PATH . "/psms/admin/includes/toasts/toastSuccess.php";
 ?>
 
 <div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="createUserModalLabel" aria-hidden="true">
