@@ -23,10 +23,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
       <span class="nav-item">User Evaluation Management</span>
       <span class="tooltip">Wallet</span>
     </a></li>
-    <li><a href="#" class="<?php echo $current_page == 'somepage.php' ? 'active' : ''; ?>">
+    <li><a href="<?php echo '/psms/admin/pages/rating.php'?>" class="<?php echo $current_page == 'userEvaluation.php' ? 'active' : ''; ?>">
       <i class="fa-sharp-duotone fa-solid fa-star-sharp-half"></i>
       <span class="nav-item">Rating Indicator</span>
-      <span class="tooltip">Analytics</span>
+      <span class="tooltip">Rating</span>
     </a></li>
     <li><a href="#" class="<?php echo $current_page == 'somepage.php' ? 'active' : ''; ?>">
       <i class="fas fa-tasks"></i>
