@@ -180,67 +180,83 @@
                                     <tbody>
                                         <tr>
                                             <td>a. Understanding of the job description</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>b. Awareness of the vision, mission and objectives of the organization</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>c. Community Oriented Policing System</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>d. Creativity / Resourcefulness</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>e. Analytical Ability</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>f. Ability to solve problems/troubleshooting</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>g. Oral and written communication</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>h. Law Enforcement & Maintenance of Law/Order</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -257,51 +273,63 @@
                                     <tbody>
                                         <tr>
                                             <td>a. Records Management & Submission of Reports</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>b. Compliance with & Implementation of Policies</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>c. Sense of Priority</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>d. Client Satisfaction / Orientation</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>e. Cost effectiveness</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>f. Involvement / Presence in Activities</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -318,43 +346,53 @@
                                     <tbody>
                                         <tr>
                                             <td>a. Receptive to ideas/suggestions</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>b. Teamwork Management</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>c. Build Linkages and networks</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>d. Ability to lead and follow</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>e. Motivation</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -371,27 +409,33 @@
                                     <tbody>
                                         <tr>
                                             <td>a. Stewardship of unit's properties</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>b. Preservation of unit interest</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>c. Coordination</td>
-                                            <td>7.0</td>
+                                            <td class="multiplier">6.0</td>
                                             <td>x</td>
-                                            <td>4</td>
+                                            <td>
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
                                             <td>=</td>
-                                            <td>28</td>
+                                            <td class="result">0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -420,11 +464,13 @@
                                             <td>x</td>
                                             <td>Personal Trait</td>
                                             <td>x</td>
-                                            <td rowspan="6" class="text-center align-middle">10</td>
-                                            <td rowspan="6" class="text-center align-middle">x</td>
-                                            <td rowspan="6" class="text-center align-middle">5</td>
-                                            <td rowspan="6" class="text-center align-middle">=</td>
-                                            <td rowspan="6" class="text-center align-middle">50</td>
+                                            <td rowspan="6" class="multiplier">6.0</td>
+                                            <td rowspan="6">x</td>
+                                            <td rowspan="6">
+                                                <input type="number" class="form-control number-input multiplier-input" min="1" max="5" step="1" placeholder="Enter number 1-5">
+                                            </td>
+                                            <td rowspan="6">=</td>
+                                            <td rowspan="6" class="result">0</td>
                                         </tr>
                                         <tr>
                                             <td>Morally Upright</td>

@@ -27,6 +27,7 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
 <body>
     <div class="containerMod">
         <?php include ROOT_PATH . "/psms/admin/includes/navbarLinks.php"; ?>
+        <!-- <?php include ROOT_PATH . "/psms/admin/includes/toasts/updateUserToast.html"; ?> -->
         <section class="mainMod">
             <button id="toggle-button">
                 <i class="fas fa-bars"></i>
@@ -197,7 +198,9 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
             form.reset();
         }
     </script>
-
+    <script>
+        <?php include ROOT_PATH . "/psms/admin/js/updateUserToast.js"; ?>
+    </script>
 
 </body>
 
