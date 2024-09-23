@@ -87,22 +87,22 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <td colspan="6">1. Ratee's Name (Last Name, Given Name, Middle Name)<br>&nbsp;</td>
-                        <td colspan="5">2. Rank:<br> <span style="margin-left: 20px;">Police Staff Sergeant</span></td>
+                        <th colspan="6">1. Ratee's Name (Last Name, Given Name, Middle Name)<br>&nbsp;</th>
+                        <th colspan="5">2. Rank:<br> <span style="margin-left: 20px;">Police Staff Sergeant</span></th>
                     </tr>
                     <tr>
-                        <td colspan="6">
+                        <th colspan="6">
                             3. Position / Designation: <br>
                             <div style="text-align: center;">PRBS / Survivor PNCO</div>
-                        </td>
+                        </th>
 
-                        <td colspan="5">4. Unit Assignment / Station / District Headquarters, Bohol Police Provincial Office</td>
+                        <th colspan="5">4. Unit Assignment / Station / District <br><span style="margin-left: 20px;">Headquarters, Bohol Police Provincial Office</span></th>
                     </tr>
                     <tr>
-                        <td colspan="11">
+                        <th colspan="11">
                             5. Years and Months in Current Position: <br>
                             <div style="margin-left: 10%;">2 years 3 months</div>
-                        </td>
+                        </th>
 
                     </tr>
                     <tr class="table-light">
@@ -380,7 +380,7 @@
                         <td class="text-center">X</td>
                     </tr>
                     <tr>
-                        <td colspan="6">Nr of Traits with check marks</td>
+                        <td colspan="6"><div  style="margin-left: 45%;">Nr of Traits with check marks</div></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -388,17 +388,17 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td colspan="9">TOTAL WEIGHTED SCORE (TWS)</td>
+                        <td colspan="9"><div  style="margin-left: 30%;">TOTAL WEIGHTED SCORE (TWS)</div></td>
                         <td rowspan="3" colspan="2" class="vAlign">
                             450 <br>90.0 <br>VS
                         </td>
 
                     </tr>
                     <tr>
-                        <td colspan="9">NUMERICAL PERFORMANCE RATING (NPR) = TWS / 5</td>
+                        <td colspan="9"><div  style="margin-left: 30%;">NUMERICAL PERFORMANCE RATING (NPR) = TWS / 5</div></td>
                     </tr>
                     <tr>
-                        <td colspan="9">EQUIVALENT ADJECTIVAL PERFORMANCE RATING (APR) (Pls refer to NPR-APR Table)</td>
+                        <td colspan="9"><div  style="margin-left: 30%;">EQUIVALENT ADJECTIVAL PERFORMANCE RATING (APR) (Pls refer to NPR-APR Table)</div></td>
                     </tr>
                     <tr>
                         <td colspan="11">Rater's Assessment of Ratee: I certify that this report represents my best judgment. [X] I DP : : I DO NOT recommend this personnel be granted (a) promotion (b) designation to higher position (c) relief<br>
