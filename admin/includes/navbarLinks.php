@@ -2,6 +2,7 @@
 // Define the current page URL
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
+<div class="sidebarModd">
 <nav class="sidebarMod collapsed">
   <span class="logo">
     <img src="<?php echo '/psms/admin/img/logo.png'; ?>" alt="">
@@ -66,3 +67,4 @@ $current_page = basename($_SERVER['PHP_SELF']);
     </li>
   </ul>
 </nav>
+</div>
