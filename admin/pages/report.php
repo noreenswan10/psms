@@ -39,13 +39,13 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
                 <table class="table">
                     <thead>
                         <tr>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">ID</th>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">Name</th>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">Position</th>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">Unit Assigned</th>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">Current Position</th>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">Position Duration</th>
-                            <th style ="background-color:#333; color: whitesmoke;" scope="col">Action</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Unit Assigned</th>
+                            <th scope="col">Current Rank</th>
+                            <th scope="col">Position Duration</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -74,21 +74,8 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
                                 </td>
 
                                 <td>
-                                    <div class="d-flex gap-2 align-items-start">
-                                        <button type="button" style ="background-color:#333; color: whitesmoke;" class="btn manage-btn"
-                                            data-bs-toggle="modal" data-bs-target="#userListModal"
-                                            data-id="<?php echo htmlspecialchars($user['id']); ?>"
-                                            data-fname="<?php echo htmlspecialchars($user['fname']); ?>"
-                                            data-lname="<?php echo htmlspecialchars($user['lname']); ?>"
-                                            data-rank="<?php echo htmlspecialchars($user['rank']); ?>"
-                                            data-position="<?php echo htmlspecialchars($user['position']); ?>"
-                                            data-unit="<?php echo htmlspecialchars($user['unitAssigned']); ?>"
-                                            data-date-hired="<?php echo htmlspecialchars($user['year_attended']); ?>"
-                                            data-username="<?php echo htmlspecialchars($user['username']); ?>">
-                                            View Details
-                                        </button>
-                                        <button type="button" style ="background-color:#333; color: whitesmoke;" class="btn manage-btn" onclick="window.location.href='evaluateUser.php'">
-                                            Rate User
+                                        <button type="button" class="btn btn-primary manage-btn" onclick="window.location.href='reportPerformanceUser.php'">
+                                            Report
                                         </button>
 
                                     </div>
@@ -102,9 +89,6 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
         </section>
     </div>
 
-    <!-- Manage User Modal -->
-    <?php include ROOT_PATH . "/psms/admin/components/modals/viewDetailsReport.php"; ?>
-
 
 
 
@@ -116,88 +100,6 @@ $unitsAssigned = json_decode($jsonUnitAssigned, true);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Get the modal and form fields
-        const userListModal = document.getElementById('userListModal');
-        const modalFnameInputTitle = document.getElementById('modalFnameInput');
-        const modalLnameInputTitle = document.getElementById('modalLnameInput');
-        const modalLnameInput = document.getElementById('modalLnameInput');
-        const modalRankSelect = document.getElementById('modalRankSelect');
-        const modalPositionSelect = document.getElementById('modalPositionSelect');
-        const modalUnitSelect = document.getElementById('modalUnitSelect');
-        const modalDateHired = document.getElementById('modalDateHired');
-        const modalUsername = document.getElementById('modalUsername');
-        const modalPassword = document.getElementById('modalPassword');
-
-        // Event listener for showing the modal
-        userListModal.addEventListener('show.bs.modal', function(event) {
-            // Button that triggered the modal
-            const button = event.relatedTarget;
-
-            // Extract data from data attributes
-            const fname = button.getAttribute('data-fname');
-            const lname = button.getAttribute('data-lname');
-            const rank = button.getAttribute('data-rank');
-            const position = button.getAttribute('data-position');
-            const unitAssigned = button.getAttribute('data-unit');
-            const dateHired = button.getAttribute('data-date-hired');
-            const username = button.getAttribute('data-username');
-
-            // Update the modal's content
-            modalFnameInputTitle.textContent = fname; // Set the title with first name
-            modalLnameInputTitle.textContent = lname; // Set the title with first name
-            modalLnameInput.value = lname;
-            modalRankSelect.value = rank;
-            modalPositionSelect.value = position;
-            modalUnitSelect.value = unitAssigned;
-            modalDateHired.value = dateHired;
-            modalUsername.value = username;
-            modalPassword.value = ''; // Blank password field for security reasons
-        });
-    });
-</script>
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the modal and form fields
-            const modalDateHired = document.getElementById('modalDateHired');
-
-            // Event listener for showing the modal
-            userListModal.addEventListener('show.bs.modal', function(event) {
-                // Button that triggered the modal
-                const button = event.relatedTarget;
-
-                // Extract data from data attributes
-                const dateHired = button.getAttribute('data-date-hired');
-
-                // Update the modal's content
-                modalDateHired.value = dateHired;
-            });
-
-            // Event listener for saving changes
-            saveChangesButton.addEventListener('click', function() {
-                // Create an object with form data
-                const userData = {
-                    dateHired: modalDateHired.value
-                };
-
-                // Log the user data to the console
-                console.log('User Data:', userData);
-
-                // Example: Send this data via an AJAX request or handle form submission
-                // Here you would normally send this data to the server using fetch or similar
-            });
-        });
-
-        function resetForm() {
-            // Select the form element (assuming it has an id of 'myForm')
-            const form = document.getElementById('addUser');
-
-            // Reset the form fields
-            form.reset();
-        }
     </script>
     <script>
         <?php include ROOT_PATH . "/psms/admin/js/updateUserToast.js"; ?>

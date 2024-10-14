@@ -45,8 +45,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </a>
       </li>
       <li>
-        <a href="#" class="<?php echo $current_page == 'somepage.php' ? 'active' : ''; ?>">
-          <i class="fas fa-cog"></i>
+        <a href="/psms/admin/pages/historyPerformanceReport.php" class="<?php echo $current_page == 'somepage.php' ? 'active' : ''; ?>">
+        <i class="fas fa-history"></i>
           <span class="nav-item">History</span>
           <span class="sideNavToolTip">History</span>
         </a>
